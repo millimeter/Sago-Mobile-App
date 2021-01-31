@@ -1,0 +1,173 @@
+<div class="page" data-name="home">
+    <!-- <div class="background"><img src="img/city2.jpg" alt=""></div> -->
+
+    <div class="navbar om-gradient">
+        <div class="navbar-inner ">
+            <div class="left">
+                <a href="#" class="link icon-only" data-panel="left">
+                    <i class="icon f7-icons ios-only">menu</i>
+                    <i class="icon material-icons md-only">menu</i>
+                </a>
+            </div>
+            <div class="title sliding">
+                <!-- <figure class="logo-title ios-only"><img src="img/logo.png" alt=""></figure>
+                <figure class="logo-title md-only"><img src="img/logo-w.png" alt=""></figure> -->
+            </div>
+            <div class="right">
+                <a id="openCart" class="link icon-only" data-popup=".car-popup">
+                    <i class="icon f7-icons ios-only">search_strong</i>
+                    <i class="icon material-icons md-only">search</i>
+                </a>
+            </div>
+            <form data-search-container=".components-list" data-search-in="a"
+                class="searchbar searchbar-expandable searchbar-components3 searchbar-init">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search Menu" />
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--  -->
+
+    <div class="page-content">
+        <!-- <div class="block">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="material-icons color-yellow icon-weather icon-5x">wb_sunny</i>
+                                <h5 class="color-primary text-uppercase">New York</h5>
+                                <h1 class="font-light mt-5">30<sup><small>o</small></sup>C</h1>
+                                <p class="mb-5 color-gray">Thursday, 8:00 AM</p>
+                                <h1><span class="font-light small">Good Morning</span><br><b class="color-primary">John</b></h1>
+                            </div>
+                        </div>
+                    </div> -->
+
+        <div class="card-body">
+            <div class="background">
+                <img src="img/saga_tile.jpg" alt="">
+            </div>
+        </div>
+        <div class="block">
+            My WishList
+        </div>
+
+        <div class="col-10 block p-0 m-0">
+            <div class="card br-0">
+                <div class="card-body p-0">
+                    <div class="row no-gap">
+                        <div onclick="scanBarcode()" class="col text-center">
+                            <div class="block">
+                                <i class="material-icons color-om-cerise icon-3x">camera</i>
+                                <br>
+                                <p class=" text-secondary">Scan <span class="color-om-cerise"
+                                        id="profile_policies_count"></span></p>
+                            </div>
+                        </div>
+                        <div onclick="openRoutePage('/my_portfolio/');" class="col text-center border-left">
+                            <div class="block">
+                                <i class="material-icons color-om-fresh-green icon-3x">shopping_basket</i>
+                                <br>
+                                <p class=" text-secondary">Cart <span class="color-om-nartjie"
+                                        id="profile_claims_count">(0)</span></p>
+                            </div>
+                        </div>
+                        <div class="col text-center border-left">
+                            <div class="block">
+                                <a onclick="getProducts()" href="" class="popup-open" data-popup=".product-popup">
+                                    <i class="material-icons color-om-sky icon-3x">add_shopping_cart</i>
+                                    <br>
+                                    <p class=" text-secondary">Pre-Order <span class="color-om-future-green"></span></p>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Home Menu  -->
+
+        <!--  Home Menu -->
+
+
+        <!-- <button class="col button button-fill color-green om-button-green-gradient">Green <img src="img/arrow-white.svg" class="om-arror-left-white"></button> -->
+
+        <div class="footer-wrapper om-footer-wrapper bottom-fixed">
+            <div class="footer" style="line-height: 20px !important;">
+                <div class="row no-gap">
+                    <div class="col text-center small">
+                        <div class="block m-1">
+                            <i class="material-icons color-om-sky icon-2x">home</i>
+                            <br>
+                            <p class=" text-secondary">Home</p>
+                        </div>
+                    </div>
+                    <div class="col text-center small">
+                        <div class="block m-1">
+                            <i class="material-icons color-gray icon-2x">shopping_basket</i>
+                            <br>
+                            <p class=" text-secondary">Cart</span></p>
+                        </div>
+                    </div>
+                    <div class="col text-center small">
+                        <div class="block m-1">
+                            <i class="material-icons color-gray icon-2x">add_shopping_cart</i>
+                            <br>
+                            <p class=" text-secondary">Order</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col text-center small">
+                        <div class="block m-1">
+                            <i class="material-icons color-gray icon-2x">person_outline</i>
+                            <br>
+                            <p class=" text-secondary">Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="popup product-popup">
+        <div class="page" data-name="prdt_lst">
+            <div class="navbar om-gradient">
+                <div class="navbar-inner">
+                    <div class="title">Product list</div>
+                    <div class="right"><a href="#" class="link popup-close"><i class="material-icons">close</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block-om-block">
+                    <div class="list components-list">
+                        <ul id="prdt_lst" class="shadow-15 home_main_menu">
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+
+</div>

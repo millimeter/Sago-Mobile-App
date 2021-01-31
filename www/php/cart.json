@@ -1,0 +1,34 @@
+[
+    {
+        "id":"1",
+        "items":[
+            {
+                "id": 1,
+                "item_no": "6007652000055",
+                "name": "Haloumi Vac Pack 200g",
+                "description": "Haloumi Vac Pack 200g",
+                "category": "Cheese",
+                "dimension": "Haloumi",
+                "case_units": 1,
+                "case_weight": 1,
+                "uoMEntry": 1,
+                "uoMCode": "Each",
+                "brand": "NA",
+                "tax": "14.50",
+                "export": 0,
+                "wholesale_zwl": 794.7,
+                "wholesale_usd": 794.7,
+                "retail_zwl": 207.9,
+                "retail_usd": 8.83,
+                "promotion_price": null,
+                "min_order": 10,
+                "max_order": 10,
+                "quantity": 1367,
+                "file_path": "none",
+                "file_name": "none",
+                "created_at": "2020-10-09T18:40:04.000000Z",
+                "updated_at": "2020-10-25T18:59:21.000000Z"
+            }
+        ]
+    }
+]

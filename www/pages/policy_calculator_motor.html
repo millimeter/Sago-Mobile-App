@@ -1,0 +1,117 @@
+<div class="page" data-name="calculator_motor">
+    <div class="navbar om-gradient">
+        <div class="navbar-inner sliding om-gradient">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+                <div class="title sliding">
+                    <figure class="logo-title ios-only"><img src="img/logo.png" alt=""></figure>
+                    <figure class="logo-title md-only"><img src="img/logo-w.png" alt=""></figure>
+                </div>
+
+            </div>
+            <div class="title"></div>
+
+        </div>
+
+
+    </div>
+    <div class="page-content">
+
+
+
+
+
+
+
+        <div class="list no-hairlines-md">
+            <ul class="shadow-15 list-no-padding ">
+                <li>
+                    <div class="block-title">
+                        <h3 class="om-margin-top om-no-border">Vehicle options</h3>
+                    </div>
+                </li>
+                <li>
+                    <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                        <select id="source" class="output" name="source">
+                    <option value="EXJAP" selected>EX JAP / EX UK</option>
+                    <option value="Other">Other</option>
+                  </select>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title om-placeholder color-gray">Select vehicle source</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+
+                <li class="item-content item-input om-no-border">
+                    <div class="item-inner">
+                        <div class="item-input-wrap">
+                            <input oninput="calculateMotorInsurance()" id="sumInsured" type="number" placeholder="Please enter sum insured" required>
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <!-- <li class="item-content item-input">
+
+                    <div class="item-inner">
+                        <div class="item-input-wrap">
+                            <p class="segmented segmented-raised ">
+                                <a href="/premium/" style="width:100%;">
+                                <button onclick="calculateMotorInsurance()" id="premium" class="button button-active om-gradient">Calculate</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </li> -->
+
+
+            </ul>
+            <div id="cal_risk block-om-block ">
+
+                <!-- <h1 id="value"></h1> -->
+                <div class="list simple-list om-padding-left-right-3">
+                    <ul>
+                        <li>
+                            <h4>Annual Premium</h4>
+                            <h4 id="value">$0.00</h4>
+                        </li>
+                        <li>
+                            <h4>Bi Annual
+                                <h4></h4>
+                                <h4 id="value_bi">$0.00</h4>
+                        </li>
+                        <li>
+                            <h4>Quartely</h4>
+                            <h4 id="value_qua">$0.00</h4>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="footer-wrapper om-footer-wrapper">
+            <div class="footer">
+                <div class="row">
+                    <div class="om_footer_logo">
+                        <img class="footer_image" src="img/footer_icon.png" alt="" />
+                        <p class="om-footer-text">DO GREAT THINGS EVERYDAY</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div> -->
+    </div>
+</div>
+
+
+</div>

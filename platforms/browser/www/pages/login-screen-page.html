@@ -1,0 +1,82 @@
+<!-- <template> -->
+<div class="page no-navbar no-swipeback" style="background-color: #fff;">
+
+    <div class="page-content">
+        <div class="background">
+            <img src="img/saga_login.png" alt="">
+        </div>
+        <!-- <div class="background"><img src="img/saga-login.png" alt=""></div> -->
+        <div class="list components-list">
+
+            <ul class="home_main_menu" style="padding-left: 16px !important; padding-right: 16px !important;">
+
+<!-- 
+                <li>
+                    <a class="item-content item-link" href="#">
+                        <div class="item-media"><i class="icon material-icons md-only icon-3x">credit_card</i>
+                        </div>
+
+                        <div class="item-inner pt-1 pb-1">
+
+                            <div class="item-title item-floating-label">username</div>
+                            <div class="item-input-wrap">
+                                <input id="motor_quote_name" name="motor_quote_name" type="text"
+                                    placeholder="Enter name" required="" class="">
+                                <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+
+                <li class="item-content item-input om-no-border">
+                    
+                    <div class="item-inner pt-1 pb-1">
+                        
+                        <div class="item-title item-floating-label">username</div>
+                        <div class="item-input-wrap">
+                            <input style="max-width: 60% !important;" id="motor_quote_name" name="motor_quote_name" type="text" placeholder="Enter name" required="" class="">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input om-no-border">
+                    
+                    <div class="item-inner pt-1 pb-1">
+                        
+                        <div class="item-title item-floating-label">password</div>
+                        <div class="item-input-wrap">
+                            <input style="max-width: 60% !important;" id="motor_quote_name" name="motor_quote_name" type="password" placeholder="Enter name" required="" class="">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <br class="mb-5"> 
+                <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-input-wrap">
+                            <p class="segmented segmented-raised ">
+                                <a href="#" class="link popup-close" style="width:100%;">
+                                    <button onclick="openRoutePage('/')" id="quote_button_premium" class="col button button-big button-raised">Login <i class="icon material-icons md-only color-info">lock_open</i></button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<!-- </template> -->
+<script>
+    return {
+        methods: {
+            signIn: function () {
+                loginAccount();
+            }
+        }
+    }
+</script>

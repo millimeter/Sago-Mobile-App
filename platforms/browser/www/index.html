@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>OMICO</title>
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link href="css/montserrat.css" rel="stylesheet">
+    <!-- Custom style  -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+    <link rel="icon" href="img/f7-icon.png">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+
+</head>
+
+<body>
+    <div id="Overux" class="sidebar-fill">
+        <div class="statusbar"></div>
+        <!-- left menu code  -->
+        <div class="panel panel-left panel-cover">
+            <div class="page">
+                <div class="page-content">
+                    <a href="/my_portfolio/" class="profile-block panel-close">
+                        <div class="media-block ">
+                            <!-- <figure class="avatar avatar-40">
+                                <img src="img/user1.png" alt="">
+                            </figure> -->
+                            <div class="media-content">
+                                <div class="media-block-title">
+                                    <h4><span id="panel_user_fullname">Online</span> <span
+                                            class="status-online bg-color-success"></span></h4>
+                                    <p class="mb-0"><small>3G</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="clear"></div>
+                    <div class="block list links-list mt-0">
+                        <ul class="accordion-list">
+                            <li>
+                                <a href="/" class="panel-close item-link item-content  om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">home</i>
+                                        <i class="icon material-icons md-only">home</i> Home
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="goToAccount();"
+                                    class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ">briefcase</i> My Portfolio
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="accordion-item">
+                                <a href="/claims/" class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">money_dollar</i>
+                                        <i class="icon material-icons md-only">attach_money</i> Claims
+                                    </div>
+                                </a>
+                                <div class="accordion-item-content">
+                                    <a href="#" class="panel-open link" data-panel="left">
+                                        Claim Notification
+                                    </a>
+                                    <a href="#" class="panel-open link" data-panel="right">
+                                        Claim Process
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/branches/" class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">map</i>
+                                        <i class="icon material-icons md-only">map</i> Our Branches
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a href="/#/" class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">person</i>
+                                        <i class="icon material-icons md-only">payment</i> Premium Payments
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/" class="panel-close item-link item-content  om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">world</i>
+                                        <i class="icon material-icons md-only">shopping_basket</i> Product Catalogue
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/emergency_services/"
+                                    class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">menu</i>
+                                        <i class="icon material-icons md-only">local_hospital</i> Emergency Services
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="/exchange_rates/"
+                                    class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">monetization_on</i>
+                                        <i class="icon material-icons md-only">monetization_on</i> Exchange Rates
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/login/" class="panel-close item-link item-content om-drawer-menu-link">
+                                    <div class="item-title">
+                                        <i class="icon f7-icons ios-only">info_fill</i>
+                                        <i class="icon material-icons md-only">help_outline</i> Help and Support
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="block">
+                        <a href="#" id="btn-panel-login" onclick="logoutAccount();"
+                            class="col button button-outline color-white panel-close ob_ghost-white">Logout <img
+                                src="img/arrow-white.svg" class="om-arror-left-white"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- left menu code  -->
+
+        <!-- right menu code  -->
+        <div class="panel panel-right panel-reveal">
+            <div class="view view-init view-right" name="right" data-url="/">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner sliding">
+                            <div class="title">Right Panel</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">
+                            <p class="color-white">This is a right side panel. <a href="#" class="panel-close">close
+                                    me</a>. You can put here anything,</p>
+                        </div>
+                        <div class="block-title">Panel Navigation</div>
+                        <div class="list links-list">
+                            <ul>
+                                <li><a href="/#">Right panel page 1</a></li>
+                                <li><a href="/#">Right panel page 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right menu code  -->
+
+        <div class="view view-main view-init ios-edges" data-url="/">
+            <div class="page no-navbar no-swipeback" data-name="login" style="background-color: #fff;">
+
+                <div class="page-content">
+                    <div class="background">
+                        <img src="img/saga_login.png" alt="">
+                    </div>
+                    <!-- <div class="background"><img src="img/saga-login.png" alt=""></div> -->
+                    <div class="list components-list">
+
+                        <ul class="home_main_menu"
+                            style="padding-left: 16px !important; padding-right: 16px !important;">
+
+                            <!-- 
+                            <li>
+                                <a class="item-content item-link" href="#">
+                                    <div class="item-media"><i class="icon material-icons md-only icon-3x">credit_card</i>
+                                    </div>
+            
+                                    <div class="item-inner pt-1 pb-1">
+            
+                                        <div class="item-title item-floating-label">username</div>
+                                        <div class="item-input-wrap">
+                                            <input id="motor_quote_name" name="motor_quote_name" type="text"
+                                                placeholder="Enter name" required="" class="">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> -->
+
+                            <li class="item-content item-input om-no-border">
+
+                                <div class="item-inner pt-1 pb-1">
+
+                                    <div class="item-title item-floating-label">username</div>
+                                    <div class="item-input-wrap">
+                                        <input style="max-width: 60% !important;" id="motor_quote_name"
+                                            name="motor_quote_name" type="text" placeholder="Enter name" required=""
+                                            class="">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input om-no-border">
+
+                                <div class="item-inner pt-1 pb-1">
+
+                                    <div class="item-title item-floating-label">password</div>
+                                    <div class="item-input-wrap">
+                                        <input style="max-width: 60% !important;" id="motor_quote_name"
+                                            name="motor_quote_name" type="password" placeholder="Enter name" required=""
+                                            class="">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <br class="mb-5">
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <p class="segmented segmented-raised ">
+                                            <a href="#" class="link popup-close" style="width:100%;">
+                                                <button onclick="openRoutePage('/home_page/')" id="quote_button_premium"
+                                                    class="col button button-big button-raised">Login <i
+                                                        class="icon material-icons md-only color-info">lock_open</i></button>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- full screen menu code  -->
+        <div class="popup popup-fullmenu">
+            <div class="view">
+                <div class="page">
+                    <div class="page-content fullscreen-menu">
+                        <a href="" class="popup-close color-white link closebutton"><i
+                                class="icon f7-icons">close</i></a>
+                        <a href="/profile/" class="block user-fullmenu popup-close">
+                            <figure>
+                                <img src="img/user1.png" alt="">
+                            </figure>
+                            <div class="media-content">
+                                <h3>John Doe<br><small>India</small></h3>
+                            </div>
+                        </a>
+                        <div class="block">
+                            <div class="menulist">
+                                <ul>
+                                    <li>
+                                        <a href="/dashboard/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">data</i>
+                                                <i class="icon material-icons md-only">poll</i> Dashboard
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/projects/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">bag</i>
+                                                <i class="icon material-icons md-only">add_shopping_cart</i> Projects
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/projectdetail/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">document_text</i>
+                                                <i class="icon material-icons md-only">filter_none</i> Details
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">person</i>
+                                                <i class="icon material-icons md-only">person</i> Profile
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/aboutus/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">world</i>
+                                                <i class="icon material-icons md-only">domain</i> About
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/component/" class="popup-close">
+                                            <div class="item-title">
+                                                <i class="icon f7-icons ios-only">bolt_round</i>
+                                                <i class="icon material-icons md-only">pages</i> Component
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block text-center">
+                            <a href="/"
+                                class="button-round button button-outline color-white popup-close autowidthbtn">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- full screen menu code  -->
+    </div>
+
+    <script src="js/framework7.min.js"></script>
+    <script src="js/routes.js"></script>
+
+    <script src="js/util.js"></script>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- sparklines js -->
+    <script src="js/jquery.sparkline.min.js"></script>
+
+    <!-- Google chart js -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKJIpvXdbTcL5gNgFHisvGBWmddLhvNK0"></script> -->
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="text/javascript" src="js/geolib.js"></script>
+
+
+    <script src="cordova.js"></script>
+    <script>
+        return {
+            methods: {
+                signIn: function () {
+                    loginAccount();
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<div class="page" data-name="exchange_rates">
+    <div class="navbar om-gradient">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+                <div class="title sliding">
+                    <figure class="logo-title ios-only"><img src="img/logo.png" alt=""></figure>
+                    <figure class="logo-title md-only"><img src="img/logo-w.png" alt=""></figure>
+                </div>
+
+            </div>
+            <div class="title"></div>
+            <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components3 searchbar-init">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search components" />
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="page-content ptr-content " @ptr:refresh="getLatestExchangeRates">
+
+        <div class="ptr-preloader">
+            <div class="preloader"></div>
+            <div class="ptr-arrow"></div>
+        </div>
+
+        <div class="block">
+            <div class="card">
+                <div class="card-body">
+                    <!-- <i class="material-icons color-blue icon-weather icon-4x">monetization_on</i> -->
+                    <h3 class="font-light color-om-fresh-green">Exchange Rates </h3>
+                    <p class="mb-2 color-gray small" id="rates_last_update">Last update: <span><span class="preloader color-red"></span></span>
+                    </p>
+                    <p class="color-gray mb-0 small text-muted">Source: cabs.co.zw</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <h2 class="block-title">Exchange Rates</h2> -->
+        <div class="list image-left-list mb-0">
+            <div class="card data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3 class="color-om-fresh-green ">Currency</h3>
+                            </th>
+                            <th>
+                                <h3 class="color-om-fresh-green ">Buy</h3>
+                            </th>
+                            <th>
+                                <h3 class="color-om-fresh-green ">Sell</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="label-cell">
+                                <img class="exchange-flag" align="left" src="img/flags/australia.svg" alt="" /> <a href="javascript:;" class="mt-1" onclick="openExchangeRateStats('AUD','')">AUD</a></td>
+                            <td class="text-cell col-25" id="AUD_rate_buy">-</td>
+                            <td class="text-cell col-25" id="AUD_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/botswana.svg" alt=""> <a href="javascript:;" class="mt-1" onclick="openExchangeRateStats('BWP','')">BWP</a></td>
+                            <td class="text-cell" id="BWP_rate_buy">-</td>
+                            <td class="text-cell" id="BWP_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/china.svg" alt=""> <a href="javascript:;" onclick="openExchangeRateStats('CHF','')">CHF</a></td>
+                            <td class="text-cell" id="CHF_rate_buy">-</td>
+                            <td class="text-cell" id="CHF_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/euro.svg" alt=""> <a href="javascript:;" onclick="openExchangeRateStats('EUR','')">EUR</a></td>
+                            <td class="text-cell" id="EUR_rate_buy">-</td>
+                            <td class="text-cell" id="EUR_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/uk.svg" alt=""> <a href="javascript:;" onclick="openExchangeRateStats('GBP','')">GBP</a></td>
+                            <td class="text-cell" id="GBP_rate_buy">-</td>
+                            <td class="text-cell" id="GBP_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/us.svg" alt=""> <a href="javascript:;" onclick="openExchangeRateStats('USN','')">USN</a></td>
+                            <td class="text-cell" id="USN_rate_buy">-</td>
+                            <td class="text-cell" id="USN_rate_sell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell"><img class="exchange-flag" align="left" src="img/flags/sa.svg" alt=""> <a href="javascript:;" onclick="openExchangeRateStats('ZAR','')">ZAR</a></td>
+                            <td class="text-cell" id="ZAR_rate_buy">-</td>
+                            <td class="text-cell" id="ZAR_rate_sell">-</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- <div class="footer-wrapper om-footer-wrapper">
+            <div class="footer">
+                <div class="row">
+                    <div class="om_footer_logo">
+                        <img class="footer_image" src="img/footer_icon.png" alt="" />
+                        <p class="om-footer-text">DO GREAT THINGS EVERYDAY</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> -->
+
+
+
+    </div>
+    <div class="fab fab-right-bottom">
+        <a href="#" class="gradient-red popup-open" data-popup=".exchange-popup">
+            <i class="icon f7-icons ios-only">compare_arrows</i>
+            <i class="icon f7-icons ios-only">list</i>
+            <i class="icon material-icons md-only">compare_arrows</i>
+            <i class="icon material-icons md-only">list</i>
+        </a>
+    </div>
+
+    <!-- policy popover  -->
+    <div class="popup exchange-popup theme-popup">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <h4 class="title">Rate Calculator</h4>
+                    <div class="right"><a href="#" class="link popup-close"><i class="material-icons">close</i></a></div>
+                </div>
+            </div>
+            <div class="page-content">
+
+                <form class="list form-store-data form-list-no-divider" id="calc-form">
+                    <ul class="shadow-0 list-no-padding">
+
+                        <li class="item-content item-input form-list-no-divider">
+                            <div class="item-inner pb-0">
+                                <div class="item-title item-label">Amount to convert (ZWL)</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" id="exchange_calc_amount" placeholder="1" onchange="exchangeCurrency();" onkeyup="this.onchange();" value="1">
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="item-content item-input form-list-no-divider">
+                            <div class="item-inner pb-0">
+                                <div class="item-title item-label">Currency</div>
+                                <div class="item-input-wrap">
+                                    <select id="exchange_calc_currency" placeholder="Select currency" onchange="exchangeCurrency()">
+                                            <option selected="selected">USN</option>
+                                            <option>AUD</option>
+                                            <option>BWP</option>
+                                            <option>CHF</option>
+                                            <option>EUR</option>
+                                            <option>GBP</option>
+                                            <option>USN</option>
+                                            <option>ZAR</option>
+
+
+                                    </select>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item-content item-input form-list-no-divider">
+                            <div class="item-inner pb-0">
+                                <div class="item-title item-label">Equivalent Amount</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" id="exchange_calc_total" value="0.00" readonly="readonly">
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                    </ul>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- policy popover -->
+
+
+</div>

@@ -1,0 +1,235 @@
+
+
+<button class="col button button-fill color-green om-button-green-gradient">Green <img src="img/arrow-white.svg" class="om-arror-left-white"></button>
+
+
+
+<div class="carosel">
+                        <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" data-slides-per-view="2" class="swiper-container swiper-init swipermultiple">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card color-white w-100">
+                                        <figure class="background rounded">
+                                            <!-- <img src="img/city.jpg" alt="" class="opacity-full"> -->
+                                        </figure>
+                                        <div class="card-body text-center">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <h5 class="text-uppercase font-weight-bold text-white">Motor Insurance</h5>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <i class="material-icons icon-4x text-white my-3">directions_car</i>
+                                                <!-- <div class="text-white mt-3">Best in Industries</div> -->
+                                            </div>
+                                            <button class="button button-fill color-yellow rounded button-small mt-3">Quote</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card color-white w-100">
+                                        <figure class="background rounded">
+                                            <!-- <img src="img/city2.jpg" alt="" class="opacity-full"> -->
+                                        </figure>
+                                        <div class="card-body text-center">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <h5 class="text-uppercase color-white">Housing Insurance</h5>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <i class="material-icons icon-4x text-white my-3">home</i>
+                                                <!-- <div class="text-white mt-3">Best in Industries</div> -->
+                                            </div>
+                                            <button class="button button-fill color-yellow rounded button-small mt-3">QUOTE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <div class="card color-white w-100">
+                                        <figure class="background rounded">
+                                            <!-- <img src="img/city.jpg" alt="" class="opacity-full"> -->
+                                        </figure>
+                                        <div class="card-body text-center">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <h5 class="text-uppercase color-white">Business Insurance</h5>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <i class="material-icons icon-4x text-white my-3">flight</i>
+                                                <!-- <div class="text-white mt-3">Best in Industries</div> -->
+                                            </div>
+                                            <button class="button button-fill color-yellow rounded button-small mt-3">View</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-50">
+                            <div class="block">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="w-100">
+                                            <h5 class="color-primary text-uppercase">Today</h5>
+                                            <div class="dynamicsparkline my-3"></div>
+                                            <h2 class="font-light mb-0">15.60</h2>
+                                            <div class="color-green mt-3 small"> % <i class="material-icons vm">arrow_drop_up</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <div class="block">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="w-100">
+                                            <h5 class="color-primary text-uppercase">Yesterday</h5>
+                                            <div class="dynamicsparkline my-3"></div>
+                                            <h2 class="font-light mb-0">15.65</h2>
+                                            <div class="color-red mt-3 small"> % <i class="material-icons vm">arrow_drop_down</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <h2 class="block-title">Top On Going Projects</h2>
+                    <div class="list project-list mb-0">
+                        <ul class="shadow-15">
+                            <li>
+                                <a href="/projectdetail/" class="item-content">
+                                    <div class="item-inner">
+                                        <h3 class="item-title">Alpha School portal</h3>
+                                        <div class="item-subtitle mb-2">Start Date: 28, July 2018</div>
+                                        <h2 class="title-number-carousel color-primary">126<small>/208 Project</small></h2>
+                                    </div>
+                                    <div class="item-media chart-container">
+                                        <small class="color-danger">
+                                                2hrs  <i class="icon f7-icons ios-only">down</i><i class="icon material-icons md-only">arrow_drop_down</i>
+                                            </small>
+                                        <div class="dynamicsparkline">Loading..</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/projectdetail/" class="item-content">
+                                    <div class="item-inner">
+                                        <h3 class="item-title">RozR David</h3>
+                                        <div class="item-subtitle mb-2">Start Date: 28, July 2018</div>
+                                        <h2 class="title-number-carousel color-primary">146<small>/216 Project</small></h2>
+                                    </div>
+                                    <div class="item-media chart-container">
+                                        <small class="color-danger">
+                                                2hrs  <i class="icon f7-icons ios-only">down</i><i class="icon material-icons md-only">arrow_drop_down</i>
+                                            </small>
+                                        <div class="dynamicsparkline">Loading..</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/projectdetail/" class="item-content">
+                                    <div class="item-inner">
+                                        <h3 class="item-title">Plasma Research Group</h3>
+                                        <div class="item-subtitle mb-2">Start Date: 28, July 2018</div>
+                                        <h2 class="title-number-carousel color-primary">132<small>/251 Project</small></h2>
+                                    </div>
+                                    <div class="item-media chart-container">
+                                        <small class="color-success">
+                                                2hrs  <i class="icon f7-icons ios-only">up</i><i class="icon material-icons md-only">arrow_drop_up</i>
+                                            </small>
+                                        <div class="dynamicsparkline">Loading..</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <div class="block">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <h5 class="color-primary text-uppercase">Active</h5>
+                                            </div>
+                                            <div class="col text-right">
+                                                <input type="checkbox" id="switch" class="switch sm">
+                                                <label for="switch">Toggle</label>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons color-yellow icon-6x my-5">wb_sunny</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <div class="block">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <h5 class="color-primary text-uppercase">Active</h5>
+                                            </div>
+                                            <div class="col  text-right">
+                                                <input type="checkbox" id="switch2" class="switch sm" checked="">
+                                                <label for="switch2">Toggle</label>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons color-red icon-6x my-5">notifications_active</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="block-title">Trending Project</h2>
+                    <div class="block">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card card-data-item">
+                                    <div class="row">
+                                        <div class="col-60">
+                                            <h3>Karla Sports App</h3>
+                                            <p>25 November 2018</p>
+                                        </div>
+                                        <div class="col-40 text-right">
+                                            <h5><span class="color-primary">Completed</span></h5>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <i class="icon f7-icons ios-only color-warning">star</i><i class="icon material-icons color-warning md-only">star</i>
+                                            <span class="post-seconds">4.9 <span>(254)</span></span>
+                                        </div>
+                                        <div class="col">
+                                            <i class="icon f7-icons ios-only">time</i><i class="icon material-icons color-grey md-only">schedule</i>
+                                            <span class="post-seconds">254 <span>hrs</span></span>
+                                        </div>
+                                        <div class="col">
+                                            <i class="icon f7-icons ios-only">money_dollar</i><i class="icon material-icons color-grey md-only">monetization_on</i>
+                                            <span class="post-seconds">4000 <span>USD</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

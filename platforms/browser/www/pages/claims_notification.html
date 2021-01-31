@@ -1,0 +1,147 @@
+<div class="page" data-name="claims_notification">
+    <div class="navbar om-gradient">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+
+                <div class="title sliding">
+                    <figure class="logo-title ios-only"><img src="img/logo.png" alt=""></figure>
+                    <figure class="logo-title md-only"><img src="img/logo-w.png" alt=""></figure>
+                </div>
+            </div>
+            <div class="title"></div>
+            <div class="right">
+                <a href="#" class="link navbar-tooltip">
+                    <i class="icon f7-icons if-ios">info</i>
+                    <i class="icon material-icons if-md">info_outline</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block">
+            <h3 class="mb-2 font-light color-om-fresh-green">Claims Notification</h3>
+
+        </div>
+        <!-- <div class="block">
+            <p>Explain what a cliams notification is here</p>
+        </div> -->
+        <form class="list form-store-data form-list-no-divider" id="demo-form">
+            <ul class="shadow-15 list-no-padding">
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">Name</div>
+                        <div class="item-input-wrap">
+                            <input name="claim_name" type="text" id="claim_client_fullname" placeholder="Your name">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">Contact Number</div>
+                        <div class="item-input-wrap">
+                            <input name="tel" type="tel" value="263" id="claim_client_contact_number" placeholder="Your Contact Number">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">E-mail</div>
+                        <div class="item-input-wrap">
+                            <input name="email" type="email" id="claim_client_email" placeholder="Your e-mail">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Policy Number</div>
+                        <div class="item-input-wrap">
+                            <input name="claim_policy_number" type="text" id="claim_client_policy_number" placeholder="Your Policy">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">URL</div>
+                        <div class="item-input-wrap">
+                            <input name="url" type="url" placeholder="URL">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Phone</div>
+                        <div class="item-input-wrap">
+                            <input name="phone" type="tel" placeholder="Your phone number">
+                            <span class="input-clear-button"></span>
+                        </div>
+                    </div>
+                </li> -->
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">Loss Type</div>
+                        <div class="item-input-wrap input-dropdown-wrap">
+                            <select name="claim_type" id="claim_loss_type" placeholder="Please select...">
+                <option value="Motor">Motor Accident</option>
+                <option value="Theft">Theft</option>
+                <option value="Fire">Fire</option>
+
+              </select>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Loss date</div>
+                        <div class="item-input-wrap">
+                            <input name="claim_loss_date" type="date" value="2014-04-30" placeholder="Please choose...">
+                        </div>
+                    </div>
+                </li> -->
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">Loss date</div>
+                        <div class="item-input-wrap">
+                            <input name="claim_loss_date" type="text" id="claim_loss_date" placeholder="dd-MM-yyyy">
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label">Range</div>
+                        <div class="item-input-wrap">
+                            <div class="range-slider range-slider-init" data-label="true">
+                                <input name="range" type="range" value="50" min="0" max="100" step="1">
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner pb-0">
+                        <div class="item-title item-label">Loss Description</div>
+                        <div class="item-input-wrap">
+                            <textarea name="claim_descriptin" id="claim_description" class="resizable" placeholder="Full Description"></textarea>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="item-content item-input form-list-no-divider">
+                    <div class="item-inner">
+                        <button type="button" class="col button button-big button-fill om-gradient om-border-radius-4" onclick="submitClaimNotification();return false;">Submit <img src="img/arrow-white.svg" class="om-arror-left-white"></button>
+
+                    </div>
+                </li>
+            </ul>
+
+
+        </form>
+    </div>
+</div>

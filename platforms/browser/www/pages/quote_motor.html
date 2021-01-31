@@ -1,0 +1,322 @@
+<div class="page" data-name="quote_motor">
+    <div class="navbar om-gradient">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title sliding">
+                <figure class="logo-title ios-only"><img src="img/logo.png" alt=""></figure>
+                <figure class="logo-title md-only"><img src="img/logo-w.png" alt=""></figure>
+            </div>
+            <div class="right">
+                <a class="link icon-only panel-open" data-panel="left">
+                    <i class="icon f7-icons ios-only">menu</i>
+                    <i class="icon material-icons md-only">menu</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block">
+            <div class="row">
+                <div class="col">
+                    <div class="card m-0">
+                        <div class="card-header p-0">
+                            <div class="list project-list w-100 p-0 m-0">
+                                <ul>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <h4 class="item-title">
+                                                    </h3>
+                                                    <!-- <div class="item-subtitle mb-2">-</div> -->
+                                                    <h4 class="title-number-carousel color-primary"><span id="motor_quote_display_vehicles_count">0</span><small> Vehicles</small></h2>
+                                            </div>
+                                            <div class="item-media chart-container">
+                                                <div class="">
+                                                    <h2 class="color-om-cerise_">$<span id="motor_quote_display_premium">0.00</span></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="toolbar tabbar">
+                                <div class="toolbar-inner">
+                                    <a href="#motor-tab-1" class="tab-link tab-link-active quote_tab_text_link">
+                                        <i class="icon material-icons md-only color-green">person</i>
+                                        <span class="icon_top">My Details</span>
+                                    </a>
+                                    <a href="#motor-tab-2" class="tab-link quote_tab_text_link">
+                                        <i class="icon material-icons md-only color-green">directions_car</i>
+                                        <span class="icon_top">Vehicles</span>
+                                    </a>
+                                    <a href="#motor-tab-3" class="tab-link quote_tab_text_link">
+                                        <i class="icon material-icons md-only color-green">assignment</i>
+                                        <span class="icon_top">Summary</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tabs-animated-wrap theme-white">
+                                <div class="tabs theme-white">
+                                    <div id="motor-tab-1" class="page-content tab tab-active">
+                                        <div class="block ">
+
+                                            <form class="form-store-data" id="quote_motor_form">
+                                                <div class="list project-list mb-0 branch-list">
+                                                    <ul class="shadow-0 list-no-padding ">
+
+
+                                                        <!--  name E.g jonh  -->
+                                                        <li class="item-content item-input om-no-border">
+                                                            <div class="item-inner pt-1 pb-1">
+                                                                <div class="item-title item-floating-label">Your name</div>
+                                                                <div class="item-input-wrap">
+                                                                    <input id="motor_quote_name" name="motor_quote_name" type="text" placeholder="Enter name" required>
+                                                                    <span class="input-clear-button"></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <!--  surname e.g snow -->
+                                                        <li class="item-content item-input om-no-border">
+                                                            <div class="item-inner pt-1 pb-1">
+                                                                <div class="item-title item-floating-label">Your surname</div>
+                                                                <div class="item-input-wrap">
+                                                                    <input id="motor_quote_surname" name="motor_quote_surname" type="text" placeholder="Enter surname" required>
+                                                                    <span class="input-clear-button"></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <!-- phone number e.g +263xxx xxx xxx -->
+                                                        <li class="item-content item-input om-no-border">
+                                                            <div class="item-inner pt-1 pb-1">
+                                                                <div class="item-title item-floating-label">Your Mobile Number</div>
+                                                                <div class="item-input-wrap">
+                                                                    <input id="motor_quote_phone" name="motor_quote_phone" type="text" value="263" required>
+                                                                    <span class="input-clear-button"></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                        <!-- email address e.g example@yourdomain.com -->
+                                                        <li class="item-content item-input om-no-border">
+                                                            <div class="item-inner pt-1 pb-1">
+                                                                <div class="item-title item-floating-label">Your Email Address</div>
+                                                                <div class="item-input-wrap">
+                                                                    <input id="motor_quote_email" name="motor_quote_email" type="email" placeholder="Enter email address" required>
+                                                                    <span class="input-clear-button"></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </form>
+
+
+                                        </div>
+                                    </div>
+                                    <div id="motor-tab-2" class="page-content tab">
+                                        <div class="list">
+                                            <a href="#" class="ml-3  popup-open  om-add-item-link" data-popup=".car-popup">Add Vehicle  <i class="icon material-icons md-only color-info"  >add_circle_outline</i> </a>
+                                            <ul id="quote_motor_vehicles" class="shadow-0 list-no-padding">
+
+                                                <!-- <li>
+                                                    <div class="item-content">
+
+                                                        <div class="item-inner no-arrow">
+                                                            <div class="item-title">
+                                                                <div class="item-header">TOYOTA MARK II</div>
+                                                                AEH0319
+                                                                <div class="text-muted">Comprehensive</div>
+                                                                <div><span class="badge quote_vehicle_premium">$0.00</span> - Cover 1231231.00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-media">
+                                                            <a href="#" onclick="quoteRemoveVehicle();"><i class="icon material-icons md-only color-danger">delete_outline</i></a>
+                                                        </div>
+                                                    </div>
+                                                </li> -->
+
+
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div id="motor-tab-3" class="page-content tab">
+
+                                        <div class="list simple-list components-list block-om-block">
+                                            <ul class="shadow-15 home_main_menu">
+                                                <li>
+                                                    <h4 class="">Annual Premium</h4>
+                                                    <h4 id="motor_quote_annual_premium">$0.00</h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="list simple-list components-list block-om-block">
+                                            <ul class="shadow-15 home_main_menu">
+                                                <li>
+                                                    <h4>Bi Annual
+                                                        <h4></h4>
+                                                        <h4 id="motor_quote_bi_annual_premium">$0.00</h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="list simple-list components-list block-om-block">
+                                            <ul class="shadow-15 home_main_menu">
+                                                <li>
+                                                    <h4>Quartely</h4>
+                                                    <h4 id="motor_quote_quaterly_premium">$0.00</h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Card content -->
+                        </div>
+                        <div class="card-footer">
+
+                            <div class="col">
+
+                            </div>
+                            <div class="col">
+                                <i class="icon f7-icons ios-only">money_dollar</i><i class="icon material-icons color-grey md-only">monetization_on</i>
+                                <span class="post-seconds">0.00 <span>Sum Insured</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- popups -->
+
+    <div class="popup car-popup">
+        <div class="page">
+            <div class="navbar om-gradient">
+                <div class="navbar-inner">
+                    <div class="title">Vehicle Details</div>
+                    <div class="right"><a href="#" class="link popup-close"><i class="material-icons">close</i></a></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block-om-block">
+                    <div class="list form-store-data">
+                        <ul id="list">
+
+                            <li>
+                                <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                                    <select id="quote_vehicle_source" class="output" name="source">
+                                <option value="EXJAP" selected>EX JAP / EX UK</option>
+                                <option value="Other">Other</option>
+                                </select>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title om-placeholder color-gray">Select vehicle source</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="item-content item-input om-no-border">
+                                <div class="item-inner pt-1 pb-1">
+                                    <div class="item-title item-floating-label">Make</div>
+
+                                    <div class="item-input-wrap">
+                                        <input id="motor_qoute_vehicle_make" type="text" name="motor_qoute_vehicle_make" placeholder="Vehicle make" required>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input om-no-border">
+                                <div class="item-inner pt-1 pb-1">
+                                    <div class="item-title item-floating-label">Model</div>
+
+                                    <div class="item-input-wrap">
+                                        <input id="motor_qoute_vehicle_model" type="text" name="motor_qoute_vehicle_model" placeholder="Vehicle model" required>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input om-no-border">
+                                <div class="item-inner pt-1 pb-1">
+                                    <div class="item-title item-floating-label">Registration number</div>
+                                    <div class="item-input-wrap">
+                                        <input id="motor_qoute_vehicle_reg" type="text" name="motor_qoute_vehicle_reg" placeholder="Registration number" required>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input om-no-border">
+                                <div class="item-inner pt-1 pb-1">
+                                    <div class="item-title item-floating-label">Vehicle Value ($)</div>
+
+                                    <div class="item-input-wrap">
+                                        <input id="motor_quote_vehicle_sum_assured" type="number" name="motor_quote_vehicle_sum_assured" placeholder="Vehicle Value" required>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+                                    <select id="motor_quote_cover_type" class="output" name="motor_quote_cover_type">
+                                    <option value="COMPREHENSIVE" selected>Comprehensive</option>
+                                    <option value="Road Traffic Acct">Road Traffic Act</option>
+                                    <option value="Full Third Party">Full Thired Party</option>
+
+                                    </select>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title om-placeholder color-success">Cover Type</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="item-content item-input om-no-border">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <button class="col button button-big button-raised popup-close" id="add_motor_button">Add  <i class="icon material-icons md-only color-info" >add</i> </button>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- End Popup 1 -->
+
+
+</div>

@@ -1,0 +1,57 @@
+ .item-input-wrap .input-verify-button {
+    bottom: 6px;
+    margin-top: 0;
+    top: auto;
+}
+ .input-verify-button {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, .12);
+    margin-top: -12px;
+}
+.input-verify-button {
+    opacity: 0;
+    pointer-events: none;
+    /* visibility: hidden; */
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    z-index: 1;
+    cursor: pointer;
+    background: 0 0;
+    right: 0;
+}
+
+ .input-verify-button:before {
+    width: 48px;
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -24px;
+}
+.input-verify-button:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+}
+ .input-verify-button:after {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D'%23000'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E);
+    background-size: 16px 16px;
+    opacity: .54;
+}
+.input-verify-button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

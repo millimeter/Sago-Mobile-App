@@ -1,0 +1,21 @@
+[
+    {
+        "username":"bchirume@gmail.com",
+        "password":"millimeter",
+        "cardCode":"TMP001",
+        "name":"blessing",
+        "surname":"chirume",
+        "phone":"0783123519"
+
+    },
+    {
+        "username":"guest@saga.com",
+        "password":"12345678",
+        "cardCode":"TMP001",
+        "name":"guest",
+        "surname":"saga",
+        "phone":"0783123519"
+
+    }
+
+]

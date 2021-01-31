@@ -1,0 +1,122 @@
+mport has been successfully finished, 40 queries executed. (api_db (3).sql)
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0005 seconds.)
+-- phpMyAdmin SQL Dump -- version 4.9.0.1 -- https://www.phpmyadmin.net/ -- -- Host: 127.0.0.1 -- Generation Time: Nov 09, 2020 at 12:29 PM -- Server version: 10.4.6-MariaDB -- PHP Version: 7.3.9 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0264 seconds.)
+SET AUTOCOMMIT = 0
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0002 seconds.)
+START TRANSACTION
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0160 seconds.)
+SET time_zone = "+00:00"
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0108 seconds.)
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0003 seconds.)
+/*!40101 SET NAMES utf8mb4 */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.7371 seconds.)
+-- -- Database: `api_db` -- -- -------------------------------------------------------- -- -- Table structure for table `cart` -- CREATE TABLE `cart` ( `id` int(11) NOT NULL, `group_id` varchar(100) NOT NULL, `cardCode` varchar(10) NOT NULL, `itemCode` varchar(100) NOT NULL, `orderNumber` int(255) NOT NULL, `quantity` int(255) NOT NULL, `shop_id` int(255) NOT NULL, `customer_invoice_status` int(1) NOT NULL DEFAULT 0, `created` datetime NOT NULL, `admin_approval_status` int(1) NOT NULL DEFAULT 0 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 12 rows inserted. (Query took 0.0695 seconds.)
+-- -- Dumping data for table `cart` -- INSERT INTO `cart` (`id`, `group_id`, `cardCode`, `itemCode`, `orderNumber`, `quantity`, `shop_id`, `customer_invoice_status`, `created`, `admin_approval_status`) VALUES (76, '10010015', 'TMP001', '6009880793051', 1010051, 0, 0, 1, '2020-11-03 06:10:17', 0), (77, '10010015', 'TMP001', '6009880793051', 1010051, 0, 0, 1, '2020-11-03 06:10:20', 0), (102, '', 'TMP001', '6009880793051', 1010051, 8, 0, 1, '2020-11-07 06:00:31', 0), (103, '', 'TMP001', '6009880793051', 1010053, 2, 0, 1, '2020-11-07 06:20:37', 0), (104, '', 'TMP002', '6009880793051', 1010054, 4, 0, 1, '2020-11-07 06:40:01', 0), (105, '', 'TMP002', '6009880793051', 1010055, 4, 0, 1, '2020-11-07 07:24:49', 0), (106, '', 'TMP001', '6009880793051', 1010056, 6, 0, 1, '2020-11-07 09:39:57', 0), (107, '', 'TMP001', '6009880793051', 1010057, 7, 0, 1, '2020-11-07 09:43:24', 0), (108, '', 'TMP002', '6009880793051', 1010058, 3, 0, 1, '2020-11-07 09:46:23', 0), (112, '', 'TMP002', '6009880793051', 0[...]
+[ Edit ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.4726 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `categories` -- CREATE TABLE `categories` ( `id` int(11) NOT NULL, `name` varchar(256) NOT NULL, `description` text NOT NULL, `shop_id` int(255) NOT NULL, `created` datetime NOT NULL, `modified` timestamp NOT NULL DEFAULT current_timestamp() ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 6 rows inserted. (Query took 0.0322 seconds.)
+-- -- Dumping data for table `categories` -- INSERT INTO `categories` (`id`, `name`, `description`, `shop_id`, `created`, `modified`) VALUES (1, 'Fashion', 'Category for anything related to fashion.', 0, '2014-06-01 00:35:07', '2014-05-30 15:34:33'), (2, 'Electronics', 'Gadgets, drones and more.', 0, '2014-06-01 00:35:07', '2014-05-30 15:34:33'), (3, 'Motors', 'Motor sports and more', 0, '2014-06-01 00:35:07', '2014-05-30 15:34:54'), (5, 'Movies', 'Movie products.', 0, '0000-00-00 00:00:00', '2016-01-08 11:27:26'), (6, 'Books', 'Kindle books, audio books and more.', 0, '0000-00-00 00:00:00', '2016-01-08 11:27:47'), (13, 'Sports', 'Drop into new winter gear.', 0, '2016-01-09 02:24:24', '2016-01-08 23:24:24')
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.7344 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `orders` -- CREATE TABLE `orders` ( `id` int(11) NOT NULL, `cardCode` varchar(10) NOT NULL, `itemCode` varchar(100) NOT NULL, `orderNumber` int(255) NOT NULL, `admin_approval_status` int(255) NOT NULL, `shop_id` int(255) NOT NULL, `approved_by` varchar(255) NOT NULL, `created` datetime NOT NULL, `modified` timestamp NOT NULL DEFAULT current_timestamp() ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 21 rows inserted. (Query took 0.2559 seconds.)
+-- -- Dumping data for table `orders` -- INSERT INTO `orders` (`id`, `cardCode`, `itemCode`, `orderNumber`, `admin_approval_status`, `shop_id`, `approved_by`, `created`, `modified`) VALUES (1010047, 'TMP001', '6009880793051', 0, 1, 0, 'TMP001', '0000-00-00 00:00:00', '2020-11-06 18:20:04'), (1010048, 'TMP001', '6009880793051', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:02:30'), (1010049, 'TMP001', '1234567890123', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:24:19'), (1010050, 'TMP001', '1234567890123', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:28:05'), (1010051, 'TMP001', '6009880793051', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:30:39'), (1010052, 'TMP001', '6009880793051', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:34:25'), (1010053, 'TMP001', '6009880793051', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:36:12'), (1010054, 'TMP002', '1234567890123', 0, 0, 0, '', '0000-00-00 00:00:00', '2020-11-07 05:40:40'), (1010055, 'TMP002', '1234567[...]
+[ Edit ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.3580 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `product` -- CREATE TABLE `product` ( `id` int(11) NOT NULL, `name` varchar(32) NOT NULL, `description` text NOT NULL, `price` decimal(10,0) NOT NULL, `category_id` int(11) NOT NULL, `created` datetime NOT NULL, `modified` timestamp NOT NULL DEFAULT current_timestamp() ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 17 rows inserted. (Query took 0.0045 seconds.)
+-- -- Dumping data for table `product` -- INSERT INTO `product` (`id`, `name`, `description`, `price`, `category_id`, `created`, `modified`) VALUES (1, 'Amazing Pillow 3.0', 'The best pillow for amazing programmers.', '255', 2, '2014-06-01 01:12:26', '2014-05-31 15:12:26'), (2, 'Google Nexus 4', 'The most awesome phone of 2013!', '299', 2, '2014-06-01 01:12:26', '2014-05-31 15:12:26'), (3, 'Samsung Galaxy S4', 'How about no?', '600', 3, '2014-06-01 01:12:26', '2014-05-31 15:12:26'), (6, 'Bench Shirt', 'The best shirt!', '29', 1, '2014-06-01 01:12:26', '2014-05-31 00:12:21'), (7, 'Lenovo Laptop', 'My business partner.', '399', 2, '2014-06-01 01:13:45', '2014-05-31 00:13:39'), (8, 'Samsung Galaxy Tab 10.1', 'Good tablet.', '259', 2, '2014-06-01 01:14:13', '2014-05-31 00:14:08'), (9, 'Spalding Watch', 'My sports watch.', '199', 1, '2014-06-01 01:18:36', '2014-05-31 00:18:31'), (10, 'Sony Smart Watch', 'The coolest smart watch!', '300', 2, '2014-06-06 17:10:01', '2014-06-05 16:09:51'), (1[...]
+[ Edit ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.3860 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `products` -- CREATE TABLE `products` ( `id` int(11) NOT NULL, `item_no` varchar(100) NOT NULL, `name` varchar(256) NOT NULL, `description` varchar(255) NOT NULL, `category_id` int(255) NOT NULL, `price` int(255) NOT NULL, `avail_items` int(255) NOT NULL, `file_path` text NOT NULL, `expiry` datetime NOT NULL, `shop_id` int(255) NOT NULL, `created` datetime NOT NULL, `modified` timestamp NOT NULL DEFAULT current_timestamp() ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 2 rows inserted. (Query took 0.0317 seconds.)
+-- -- Dumping data for table `products` -- INSERT INTO `products` (`id`, `item_no`, `name`, `description`, `category_id`, `price`, `avail_items`, `file_path`, `expiry`, `shop_id`, `created`, `modified`) VALUES (25, '6009880793051', 'Del Monte Green Apple Fruit Drink 500ml', 'The best drink for amazing programmers.', 2, 50, 30, 'img/green_apple.jpg', '2020-12-01 00:35:07', 1, '2020-11-02 22:25:11', '2020-11-02 21:25:11'), (26, '6009880793052', 'Kian Short Hand Note Book', 'The best drink for amazing programmers.', 2, 50, 30, 'img/green_apple.jpg', '2020-12-01 00:35:07', 2, '2020-11-08 20:34:24', '2020-11-08 19:34:24')
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.4619 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `shops` -- CREATE TABLE `shops` ( `id` int(255) NOT NULL, `name` varchar(500) NOT NULL, `description` varchar(500) NOT NULL, `created` datetime NOT NULL, `modified` datetime NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 2 rows inserted. (Query took 0.0065 seconds.)
+-- -- Dumping data for table `shops` -- INSERT INTO `shops` (`id`, `name`, `description`, `created`, `modified`) VALUES (1, 'TM PICK N PAY', '82 MCLERRY MSASA', '0000-00-00 00:00:00', '0000-00-00 00:00:00'), (2, 'OK MART', '82 MCLERRY CHINHOYI', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.4825 seconds.)
+-- -------------------------------------------------------- -- -- Table structure for table `users` -- CREATE TABLE `users` ( `id` int(11) NOT NULL, `name` text NOT NULL, `surname` text NOT NULL, `email` varchar(100) NOT NULL, `password` varchar(100) NOT NULL, `cardCode` varchar(10) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+[Edit inline] [ Edit ] [ Create PHP code ]
+ 4 rows inserted. (Query took 0.0320 seconds.)
+-- -- Dumping data for table `users` -- INSERT INTO `users` (`id`, `name`, `surname`, `email`, `password`, `cardCode`) VALUES (65, 'balessing', 'chirume', 'bchirume@gamil.com', '7442', 'TMP001'), (68, 'jasper', 'kuri', 'jasperkurrie@gamil.com', '12345678', 'TMP002'), (70, 'blesdfskjk', 'dfsdfjksdkj', '[object Object]', '[object Object]', 'TMP003'), (71, 'callaghan', 'miller', 'cmiller@gmail.com', '12345678', 'TMP003')
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.2346 seconds.)
+-- -- Indexes for dumped tables -- -- -- Indexes for table `cart` -- ALTER TABLE `cart` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.7984 seconds.)
+-- -- Indexes for table `categories` -- ALTER TABLE `categories` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.9610 seconds.)
+-- -- Indexes for table `orders` -- ALTER TABLE `orders` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.2930 seconds.)
+-- -- Indexes for table `product` -- ALTER TABLE `product` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.7966 seconds.)
+-- -- Indexes for table `products` -- ALTER TABLE `products` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.8360 seconds.)
+-- -- Indexes for table `shops` -- ALTER TABLE `shops` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.8921 seconds.)
+-- -- Indexes for table `users` -- ALTER TABLE `users` ADD PRIMARY KEY (`id`)
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.2423 seconds.)
+-- -- AUTO_INCREMENT for dumped tables -- -- -- AUTO_INCREMENT for table `cart` -- ALTER TABLE `cart` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.9994 seconds.)
+-- -- AUTO_INCREMENT for table `categories` -- ALTER TABLE `categories` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.3884 seconds.)
+-- -- AUTO_INCREMENT for table `orders` -- ALTER TABLE `orders` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1010068
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.9844 seconds.)
+-- -- AUTO_INCREMENT for table `product` -- ALTER TABLE `product` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.4979 seconds.)
+-- -- AUTO_INCREMENT for table `products` -- ALTER TABLE `products` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.9927 seconds.)
+-- -- AUTO_INCREMENT for table `shops` -- ALTER TABLE `shops` MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 1.0487 seconds.)
+-- -- AUTO_INCREMENT for table `users` -- ALTER TABLE `users` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0002 seconds.)
+COMMIT
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0204 seconds.)
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0004 seconds.)
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
+[Edit inline] [ Edit ] [ Create PHP code ]
+ MySQL returned an empty result set (i.e. zero rows). (Query took 0.0004 seconds.)
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
+[Edit inline] [ Edit ] [ Create PHP code ]
+Open new phpMyAdmin window
